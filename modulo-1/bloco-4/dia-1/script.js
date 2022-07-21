@@ -138,13 +138,25 @@ if (s >= 90 && s <= 100) {
 
 // REQUISITO 8 //
 
-const t = 40;
+const t = 43;
 const u = 53;
-const v = 20;
+const v = 23;
 
-if (t % 2 !== 0 || u % 2 !== 0 || v % 2 !== 0) {
+if (t % 2 == 0 || u % 2 == 0 || v % 2 == 0) {
     console.log(true);
 } else {
     console.log(false);
 }
 
+// REQUISITO 9 //
+
+
+const w = 40;
+const x = 53;
+const y = 20;
+
+if (w % 2 !== 0 || x % 2 !== 0 || y % 2 !== 0) {
+    console.log(true);
+} else {
+    console.log(false);
+}
