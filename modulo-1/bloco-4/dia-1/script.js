@@ -25,27 +25,6 @@ if (c > d) {
 } 
 
 // REQUISITO 3 //
-/* 
-
-const e = 25;
-const f = 30;
-const g = 35;
-
-switch (maior) {
-    case e > f && e > g:
-        console.log(`O número ${e} é maior que ${f} e ${g}`);
-        break;
-
-    case f > e && f > g:
-        console.log(`O número ${f} é maior que ${e} e ${g}`);
-        break;
-
-    case g > e && g > f:
-        console.log(`O número ${g} é maior que ${e} e ${f}`);
-        break;
-
-}
-*/ 
 
 const e = 25;
 const f = 30;
@@ -59,4 +38,16 @@ if (e > f && e > g) {
 
 } else {
     console.log(`O número ${g} é maior que ${e} e ${f}`)
+}
+
+// REQUISITO 4 //
+
+const h = 1;
+
+if (h > 0){
+    console.log(`O número ${h} é positivo`);
+}   else if (h === 0) {
+    console.log(`O número ${h} é neutro`);
+} else {
+    console.log(`O número ${h} é negativo`);
 }
