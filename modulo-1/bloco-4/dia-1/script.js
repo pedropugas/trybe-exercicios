@@ -109,3 +109,29 @@ switch (peca) {
 
 }
 
+// REQUISITO 7 //
+
+const s =-1;
+
+if (s >= 90 && s <= 100) {
+    console.log("Sua nota é A");
+
+} else if (s >= 80 && s <= 100) {
+    console.log("Sua nota é B");
+
+} else if (s >= 70 && s <= 100) {
+    console.log("Sua nota é C");
+
+} else if (s >= 60 && s <= 100) {
+    console.log("Sua nota é D");
+
+} else if (s >= 50 && s <= 100) {
+    console.log("Sua nota é E");
+
+} else if(s < 50 && s >= 0) {
+    console.log("Sua nota é F");
+
+} else {
+    console.log("ERRO: Insira uma porcentagem entre 0 e 100");
+
+}
