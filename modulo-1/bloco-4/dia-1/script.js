@@ -135,3 +135,16 @@ if (s >= 90 && s <= 100) {
     console.log("ERRO: Insira uma porcentagem entre 0 e 100");
 
 }
+
+// REQUISITO 8 //
+
+const t = 40;
+const u = 53;
+const v = 20;
+
+if (t % 2 !== 0 || u % 2 !== 0 || v % 2 !== 0) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+
