@@ -72,3 +72,40 @@ if (i < 0 || j < 0 || k < 0) {
 
 } 
 
+// REQUISITO 6 //
+
+const m = "torre";
+const n = "cavalo";
+const o =  "bispo";
+const p = "rei";
+const q = "rainha";
+const r = "peão";
+
+const peca = "REI".toLowerCase();
+
+switch (peca) {
+    case "torre":
+        console.log(`A peça ${peca} anda nas horizontais e diagonais.`); 
+        break;
+    case "cavalo":
+        console.log(`A peça ${peca} anda nas horizontais e diagonais em formato de L.`); 
+        break;
+
+    case "bispo":
+        console.log(`A peça ${peca} anda na diagonal.`); 
+        break;
+
+    case "rei":
+        console.log(`A peça ${peca} anda para todos os sentidos.`); 
+        break;
+
+     case "rainha":
+        console.log(`A peça ${peca} anda para todos os sentidos.`); 
+         break;
+
+    case "peao":
+        console.log(`A peça ${peca} anda para todos os sentidos.`); 
+        break;
+
+}
+
