@@ -46,8 +46,29 @@ const h = 1;
 
 if (h > 0){
     console.log(`O número ${h} é positivo`);
+
 }   else if (h === 0) {
     console.log(`O número ${h} é neutro`);
+
 } else {
     console.log(`O número ${h} é negativo`);
 }
+
+// REQUISITO 5 //
+
+const i = 60;
+const j = 60;
+const k = 20;
+const l = i + j + k;
+
+if (i < 0 || j < 0 || k < 0) {
+    console.log("Erro: Cada um dos ângulos devem ser um número positivo.");
+
+} else if (l !== 180){
+    console.log(l == 180);
+
+} else if (l == 180) {
+    console.log(l == 180);
+
+} 
+
