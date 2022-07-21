@@ -1,15 +1,9 @@
-var estadoCandidato = "reprovado";
+const a = 10;
+const b = 20;
 
-switch (estadoCandidato) {
-    case "aprovado":
-        console.log("Parabéns, você foi aprovado(a)!");
-        break;
-    case "lista":
-        console.log("Atenção, você está na lista de espera.");
-        break;
-    case "reprovado":
-        console.log("Você foi reprovado(a)!");
-        break;
-    default:
-        console.log("Informação inválida, tente novamente");
-}
+var soma = a + b;
+var subtracao = a - b;
+var multiplicacao = a * b;
+var divisao = a / b;
+var modulo = a % b;
+
