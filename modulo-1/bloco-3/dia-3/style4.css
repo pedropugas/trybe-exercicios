@@ -1,0 +1,78 @@
+ol li {
+    background-color: yellow;
+}
+
+ol li:nth-child(2) {
+   background-color: green;
+}
+
+ol li:nth-child(4) {
+    background-color: green;
+ }
+
+ ol li:nth-child(1) {
+    text-transform: lowercase;
+ }
+
+ ol li:nth-child(3) {
+    text-transform: lowercase;
+ }
+
+ ol li:nth-child(5) {
+    text-transform: lowercase;
+ }
+
+ h1, h3 {
+    color: red;
+ }
+
+ h1 em {
+    font-size: 40px;
+    border: 1px solid black;
+ }
+
+ li {
+    font-size: 20px;
+ }
+
+ li em {
+    font-weight: bold;
+ }
+
+ ul#lista-linguagens li:nth-child(1) {
+    color: blue;
+ }
+
+ ul#lista-linguagens li:nth-child(2) {
+    color: blue;
+    background-color: pink;
+ }
+
+ ul#lista-linguagens li:nth-child(3) {
+    color: blue;
+    background-color: pink;
+ }
+
+ ul#aliados-desenvolvedora li:hover {
+    font-weight: bold;
+ }
+
+ ul#aliados-desenvolvedora li:nth-child(1):hover {
+    color: orange;
+}
+
+ul#aliados-desenvolvedora li:nth-child(2):hover {
+    color: greenyellow;
+}
+
+ul#aliados-desenvolvedora li:nth-child(3):hover {
+    color: black;
+}
+
+ul#aliados-desenvolvedora li:nth-child(4):hover {
+    color: yellow;
+}
+
+ul#aliados-desenvolvedora li:nth-child(5):hover {
+    color: green;
+}
