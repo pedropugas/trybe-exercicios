@@ -57,7 +57,24 @@
   </head>
   <body>
     <script>
-        
+        let body = document.querySelector('body');
+        let primeiroH1 = document.createElement('h1');
+        primeiroH1.id = 'primeiroH1';
+        primeiroH1.innerText = 'Exercício 5.2 - JavaScript DOM'
+        body.appendChild(primeiroH1); 
+
+        let main = document.createElement('main');
+        main.className = 'main-content';
+        body.appendChild(main);
+
+        let section = document.createElement('section');
+        section.className = 'center-content';
+        main.appendChild(section);
+
+        let p = document.createElement('p');
+        p.id = 'primeiroP';
+        section.appendChild(p);
+
     </script>
   </body>
 </html>
