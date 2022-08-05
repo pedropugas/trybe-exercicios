@@ -1,0 +1,16 @@
+h1, p {
+    text-align: center;
+}
+
+.lista-sites:hover {
+    background-color: blue;
+    color: white;
+}
+
+li:active {
+    font-family: fantasy;
+}
+
+ol, ul {
+    list-style: none;
+}
