@@ -40,7 +40,7 @@ function createDaysOfTheWeek() {
 
   // Requisito 2
 
-  function createHolidayBtn(feriados) {
+  function createHolidayBtn() {
     let holidayBtn = document.createElement('button')
     let div = document.querySelector('.buttons-container');
 
@@ -51,3 +51,19 @@ function createDaysOfTheWeek() {
   }
 
   createHolidayBtn();
+
+  // Requisito 3
+
+  const holidayBtnChange = document.querySelector('#btn-holiday');
+
+
+  function holidayChangeColor() {
+    if(holidayBtnChange.className === 'day') {
+        backgroundColor = 'red';
+    } else {
+        backgroundColor = 'white'
+    }
+  }
+
+  holidayBtnChange.addEventListener('click', holidayChangeColor)
+  
