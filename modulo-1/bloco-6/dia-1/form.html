@@ -11,6 +11,7 @@
         <h1>Header da página</h1>
     </header>
     <main id="conteudo-principal">
+        <form action="" method="get">
         <section id="nome-email">
             <label for="nome-completo"> Nome completo: 
                 <input type="text" name="nome-completo" id="nome-completo" minlength="10" maxlength="40">
@@ -62,9 +63,14 @@
             <br>
             <br>
         </section>
-        <section id="submmit">
-                <button id="submmit-button">Enviar</button>
+        <section id="submit">
+            <button type="submit" id="submit-button">Enviar</button>
         </section>
+        <!-- <section id="reset">
+            <input type="reset" name="reset-button" id="reset-button">
+        </section> -->
+        </form>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
