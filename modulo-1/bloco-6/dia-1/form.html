@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id='cabecalho'>
@@ -13,7 +14,7 @@
     <main id="conteudo-principal">
         <form id='my-form' action="" method="get">
         <section id="nome-email">
-            <label for="nome-completo"> Nome completo: 
+            <label for="nome-completo"> Nome: 
                 <input type="text" name="nome-completo" id="nome-completo" minlength="10" maxlength="40">
             </label>
             <br>
@@ -38,6 +39,7 @@
         </section>
         <section id="porque-ganhar"> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
             <br>
+            <br>
             <textarea name="porque" id="porque" cols="30" rows="10" maxlength="500"></textarea>
             <br>
             <br>
@@ -58,7 +60,7 @@
         </section>
         <section id="copyright">
             <label for="copy"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-                <input type="checkbox" name="copy" id="copy">
+                <input type="checkbox" name="copy" id="copy" required>
             </label>
             <br>
             <br>
