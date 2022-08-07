@@ -1,0 +1,13 @@
+main {
+    border: 1px solid rgb(160, 160, 160);
+}
+
+form {
+    margin: 15px;
+}
+
+#reset-button {
+    position: absolute;
+    left: 100px;
+    bottom: 337px;
+}
