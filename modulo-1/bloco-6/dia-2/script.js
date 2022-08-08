@@ -29,3 +29,5 @@ botaoRst.addEventListener('click', rstBtn)
 // }
 
 // nome.addEventListener('change', caracteresCheck)
+
+document.getElementById('data').DatePickerX.init();
