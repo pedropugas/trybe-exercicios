@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        let body = document.querySelector('body');
+        let primeiroH1 = document.createElement('h1');
+        primeiroH1.className = 'title';
+        primeiroH1.innerText = 'Exercício 5.2 - JavaScript DOM'
+        body.appendChild(primeiroH1); 
+
+        let main = document.createElement('main');
+        main.className = 'main-content';
+        main.style.backgroundColor = 'green';
+        body.appendChild(main);
+
+        let section = document.createElement('section');
+        section.className = 'center-content';
+        main.appendChild(section);
+
+        let p = document.createElement('p');
+        p.id = 'primeiroP';
+        section.appendChild(p);
+
+        let segundaSection = document.createElement('section');
+        segundaSection.className = 'left-content';
+        main.appendChild(segundaSection);
+
+        let terceiraSection = document.createElement('section');
+        terceiraSection.className = 'right-content';
+        terceiraSection.style.marginRight = 'auto';
+        main.appendChild(terceiraSection);
+
+        let imagem = document.createElement('img');
+        imagem.className = 'small-image'
+        imagem.src = 'https://picsum.photos/200 '
+        segundaSection.appendChild(imagem);
+
+        let lista = document.createElement('ul');
+        lista.id = 'lista';
+        lista.innerHTML = '<li>um <li> dois <li> três <li> quatro <li> cinco <li> seis <li> sete <li> oito <li> nove <li> dez'
+        terceiraSection.appendChild(lista);
+
+        let primeiraH3 = document.createElement('h3');
+        let segundaH3 = document.createElement('h3');
+        let terceiraH3 = document.createElement('h3');
+
+        primeiraH3.className = 'description';
+        segundaH3.className = 'description';
+        terceiraH3.className = 'description';
+
+        main.appendChild(primeiraH3);
+        main.appendChild(segundaH3);
+        main.appendChild(terceiraH3);
+
+        main.removeChild(segundaSection);
+
+        lista.lastChild.remove();
+        lista.lastChild.remove();
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurso TrybeTrip</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+</head>
+<body>
+    <header id='cabecalho'>
+        <h1>Concurso TrybeTrip</h1>
+    </header>
+    <main id="conteudo-principal">
+        <form id='my-form' action="" method="get">
+        <section class="form-group" id="nome-email">
+            <label for="nome-completo"> Nome: 
+                <input class="form-control" type="text" name="nome-completo" id="nome-completo" minlength="10" maxlength="40">
+            </label>
+            <br>
+            <br>
+            <label for="email"> Email: 
+                <input class="form-control" type="email" name="email" id="email" minlength="10" maxlength="50">
+            </label>
+            <br>
+            <br>
+        </section>
+        <section class="form-group" id="destino-favorito">
+            <label for="destino"> Destino favorito: 
+                <br>
+                <br>
+                <select class="btn btn-secondary dropdown-toggle" name="destino" id="destino">
+                    <option value="cidade">Cidade</option>
+                    <option value="campo">Campo</option>
+                    <option value="praia">Praia</option>
+                    <option value="montanhas">Montanhas</option>
+                </select>
+            </label>
+            <br>
+            <br>
+        </section>
+        <section class="form-group" id="porque-ganhar"> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+            <br>
+            <br>
+            <textarea class='form-control' name="porque" id="porque" cols="30" rows="10" maxlength="500"></textarea>
+            <br>
+            <br>
+        </section>
+        <section class="form-group" id="melhor-data">
+            <label for="data"> Qual a melhor data para realizar sua viagem?
+                <input class="form-control" type="date" name="data" id="data">
+            </label>
+            <br>
+            <br>
+        </section>
+        <section class="form-group" id="newsletter">
+            <label for="news"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                <input type="checkbox" name="news" id="news">
+            </label>
+            <br>
+            <br>
+        </section>
+        <section class="form-group" id="copyright">
+            <label for="copy"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                <input type="checkbox" name="copy" id="copy" required>
+            </label>
+            <br>
+            <br>
+        </section>
+        <section class="form-group" id="submit">
+            <button class='form-control btn btn-primary' type="submit" id="submit-button">Enviar</button>
+            <br>
+            <br>
+        </section>
+        <input class="form-control btn btn-danger" type="button" value="Redefinir informações" id='reset-button' onclick="rstBtn()">
+        </form>
+    </main>
+    <script src="script.js"></script>
+    <script src="dist/js/DatePickerX.min.js"></script>
+</body>
+</html>
