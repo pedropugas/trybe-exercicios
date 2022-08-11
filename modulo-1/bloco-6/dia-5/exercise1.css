@@ -61,3 +61,17 @@
         margin-right: 4.5%;
     }
   }
+
+  @media screen and (min-width: 1020px) {
+    body {
+        background-color: rgb(213, 213, 213);
+        font-size: 1.8em;
+        margin: 25px 10%;
+        max-width: 1200px;
+    }
+
+    figure {
+        width: 30%;
+        margin-right: 2.5%;
+      }
+  }
