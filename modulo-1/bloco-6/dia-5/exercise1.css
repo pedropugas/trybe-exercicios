@@ -50,5 +50,14 @@
   }
 
   @media screen and (min-width: 794px) {
+    body {
+        background-color: grey;
+        font-size: 1.5em;
+        margin: 25px 6%;
+    }
 
+    figure {
+        width: 35%;
+        margin-right: 4.5%;
+    }
   }
