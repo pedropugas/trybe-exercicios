@@ -2,6 +2,7 @@
  * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * apply a natural box layout model to all elements, but allowing components to change
  */
+
  html {
     box-sizing: border-box;
   }
@@ -12,6 +13,7 @@
   
   body {
     font-size: 1.2em;
+    margin: 0 3%;
   }
   
   article {
@@ -20,6 +22,7 @@
   
   h1 {
     font-size: 1.9em;
+    margin: .9em 0 0 0;
   }
   
   h2 {
